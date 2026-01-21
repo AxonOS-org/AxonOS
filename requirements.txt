@@ -1,0 +1,6 @@
+# AxonOS All Dependencies
+# Use specific files for production deployment
+
+-r requirements-core.txt
+-r requirements-hardware.txt
+-r requirements-api.txt

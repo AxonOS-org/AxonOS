@@ -1,0 +1,12 @@
+# AxonOS API Dependencies
+# Async API gateway for streaming data
+# Flask removed - using only modern async stack
+
+# --- Modern Async API ---
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# --- Database Interface ---
+# SQLAlchemy 2.0 - new standard ORM
+SQLAlchemy>=2.0.0
+alembic>=1.13.0     # Migrations (mandatory for production)

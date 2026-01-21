@@ -1,0 +1,8 @@
+# AxonOS Hardware Dependencies
+# Drivers and interfaces for working with BCI devices
+# Only needed when working with real hardware
+
+# --- BCI Hardware Interface ---
+brainflow>=5.10.0   # Universal driver for boards
+pylsl>=1.16.2       # Lab Streaming Layer for stream synchronization
+pyserial>=3.5       # For legacy devices

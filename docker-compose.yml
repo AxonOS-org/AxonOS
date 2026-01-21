@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  axonos:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - AXONOS_MASTER_KEY=${AXONOS_MASTER_KEY}
+    volumes:
+      - ./logs:/app/logs
+      - ./vault:/app/vault
