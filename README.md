@@ -1,3 +1,13 @@
+AxonOS/
+ ├─ docs/
+ │   └─ architecture.md
+ ├─ kernel/
+ ├─ ai-runtime/
+ ├─ privacy/
+ ├─ interface/
+ └─ README.md
+
+
 # 🛠️ Tech Stack & Dependencies
 
 Our architecture consists of four distinct layers designed for modularity, security, and performance.
