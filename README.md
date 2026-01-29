@@ -39,14 +39,14 @@ AxonOS is built on a modular architecture separating the high-performance kernel
 
 ```mermaid
 graph TD
-    A[Hardware Layer - EEG/fNIRS] -->|Raw Stream| B(HAL / Drivers)
-    B -->|Normalized Data| C{Axon Core Kernel}
-    C -->|Signal Processing| D[Neural Decoder]
-    C -->|Privacy Filter| E[ZKP Enclave]
-    D --> F[Event Bus]
+    A["Hardware Layer – EEG/fNIRS"] -->|"Raw Stream"| B("HAL / Drivers")
+    B -->|"Normalized Data"| C{Axon Core Kernel}
+    C -->|"Signal Processing"| D["Neural Decoder"]
+    C -->|"Privacy Filter"| E["ZKP Enclave"]
+    D --> F["Event Bus"]
     E --> F
-    F -->|API| G[User Space / AI Agents]
-    F -->|Visuals| H[UI / Dashboard]
+    F -->|"API"| G["User Space / AI Agents"]
+    F -->|"Visuals"| H["UI / Dashboard"]
 
 
 🚀 Quick Start
