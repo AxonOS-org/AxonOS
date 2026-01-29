@@ -1,3 +1,7 @@
+
+
+
+
 <div align="center">
 
 
@@ -28,13 +32,14 @@ We believe your neural data is the ultimate private property. Our architecture e
 * 🛡️ Mind Sandbox: Zero-Knowledge Proof (ZKP) verified data streams. Your raw neural data never leaves the local enclave unless you explicitly sign the transaction.
 * 🔌 Universal HAL: Hardware Abstraction Layer supporting major BCI headsets (OpenBCI, Muse, Neurosity, Custom Implants).
 * 🤖 Agent Protocol: Native runtime for AI agents that react to cognitive states (Focus, Flow, Stress) in real-time.
+
 ## 🏗️ Architecture
 
 AxonOS is built on a modular architecture separating the high-performance kernel from the user-space applications.
 
-`mermaid
+```mermaid
 graph TD
-    A[Hardware Layer (EEG/fNIRS)] -->|Raw Stream| B(HAL / Drivers)
+    A[Hardware Layer - EEG/fNIRS] -->|Raw Stream| B(HAL / Drivers)
     B -->|Normalized Data| C{Axon Core Kernel}
     C -->|Signal Processing| D[Neural Decoder]
     C -->|Privacy Filter| E[ZKP Enclave]
@@ -42,6 +47,7 @@ graph TD
     E --> F
     F -->|API| G[User Space / AI Agents]
     F -->|Visuals| H[UI / Dashboard]
+
 
 🚀 Quick Start
 > Note: AxonOS is currently in Phase II (Alpha). APIs are subject to change.
