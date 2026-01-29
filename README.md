@@ -1,11 +1,18 @@
-AxonOS/
- ├─ docs/
- │   └─ architecture.md
- ├─ kernel/
- ├─ ai-runtime/
- ├─ privacy/
- ├─ interface/
- └─ README.md
+# AxonOS
+
+Sovereign AI Operating System for Humans.
+
+## Overview
+AxonOS is a privacy-first AI operating system designed for future human-computer interaction.
+
+## Architecture
+See docs/architecture.md
+
+## Status
+Early architecture stage.
+
+## Roadmap
+See docs/roadmap.md
 
 
 # 🛠️ Tech Stack & Dependencies
