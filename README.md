@@ -33,3 +33,13 @@ We believe your neural data is the ultimate private property. Our architecture e
 * 🔌 Universal HAL: Hardware Abstraction Layer supporting major BCI headsets (OpenBCI, Muse, Neurosity, Custom Implants).
 * 🤖 Agent Protocol: Native runtime for AI agents that react to cognitive states (Focus, Flow, Stress) in real-time.
 
+
+---
+
+## AxonOS Concept Video
+
+Watch the public AxonOS BCI concept video:
+
+[AxonOS Concept.mp4](public/media/AxonOS%20Concept.mp4)
+
+This is a concept visualization using simulated EEG and gameplay input. It is not a medical-device, clinical-validation, or regulatory-approval claim.
