@@ -43,3 +43,19 @@ Watch the public AxonOS BCI concept video:
 [AxonOS Concept.mp4](public/media/AxonOS%20Concept.mp4)
 
 This is a concept visualization using simulated EEG and gameplay input. It is not a medical-device, clinical-validation, or regulatory-approval claim.
+
+---
+
+<!-- AXONOS_CONCEPT_VIDEO_START -->
+
+## AxonOS Concept Video
+
+[![AxonOS Concept Preview](public/media/AxonOS%20Concept%20Preview.gif)](public/media/AxonOS%20Concept.mp4)
+
+Watch the full concept video:
+
+[AxonOS Concept.mp4](public/media/AxonOS%20Concept.mp4)
+
+This is a simulated concept demonstration using EEG-style telemetry and gameplay input. It is not a clinical, medical-device, or regulatory claim.
+
+<!-- AXONOS_CONCEPT_VIDEO_END -->
