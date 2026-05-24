@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: AxonOS
+message: "If you use AxonOS in research, standards work, or technical review, please cite this repository."
+type: software
+authors:
+  - family-names: Yermakou
+    given-names: Denis
+repository-code: "https://github.com/AxonOS-org/AxonOS"
+url: "https://axonos.org"
+license: MIT
+date-released: 2026-05-24
+abstract: "Public entry point for AxonOS, an open operating layer for brain-computer interfaces."
+keywords:
+  - brain-computer-interface
+  - neurotechnology
+  - operating-system
+  - real-time-systems
+  - rust
+  - bci
