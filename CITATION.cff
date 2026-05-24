@@ -1,19 +1,29 @@
 cff-version: 1.2.0
-title: AxonOS
-message: "If you use AxonOS in research, standards work, or technical review, please cite this repository."
+title: "AxonOS"
+message: >-
+  If you reference the AxonOS project, please cite it using the
+  metadata below. The canonical specification is the axonos-standard
+  repository.
 type: software
 authors:
-  - family-names: Yermakou
-    given-names: Denis
+  - given-names: Denis
+    family-names: Yermakou
+    affiliation: "AxonOS Project"
 repository-code: "https://github.com/AxonOS-org/AxonOS"
 url: "https://axonos.org"
-license: MIT
-date-released: 2026-05-24
-abstract: "Public entry point for AxonOS, an open operating layer for brain-computer interfaces."
+abstract: >-
+  AxonOS is a pre-clinical technical infrastructure project for the
+  brain-computer interface boundary. It defines an open operating layer
+  between neural hardware, real-time signal processing, consent
+  enforcement, typed neural-intent events, and the applications that
+  act on them. This repository is the public entry point; the canonical
+  technical standard is the axonos-standard repository.
 keywords:
-  - brain-computer-interface
+  - brain-computer interface
   - neurotechnology
-  - operating-system
-  - real-time-systems
-  - rust
-  - bci
+  - real-time systems
+  - operating system
+  - consent enforcement
+  - neural privacy
+license: MIT
+date-released: "2026-05-23"
