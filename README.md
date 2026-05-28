@@ -8,10 +8,10 @@
 
 <br>
 
-[![Standard](https://img.shields.io/badge/Standard-v1.0.0-1d1d1f?style=flat-square)](https://github.com/AxonOS-org/axonos-standard)
-[![License](https://img.shields.io/badge/License-MIT-1d1d1f?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Pre--clinical-6e6e73?style=flat-square)](#what-axonos-does-not-claim)
-[![Language](https://img.shields.io/badge/Kernel-Rust%20%23!%5Bno__std%5D-6e6e73?style=flat-square)](https://github.com/AxonOS-org/axonos-kernel)
+[![Standard](https://img.shields.io/badge/Standard-v1.0.0-0a4a8f?style=flat-square)](https://github.com/AxonOS-org/axonos-standard)
+[![License](https://img.shields.io/badge/License-MIT-475569?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Pre--clinical-475569?style=flat-square)](#what-axonos-does-not-claim)
+[![Language](https://img.shields.io/badge/Kernel-Rust%20no__std-CE422B?style=flat-square)](https://github.com/AxonOS-org/axonos-kernel)
 [![Site](https://img.shields.io/badge/axonos.org-↗-0a4a8f?style=flat-square)](https://axonos.org)
 
 <br>
@@ -158,13 +158,13 @@ Every repository below is public. There are no private repositories.
 
 | Repository | Role | Status |
 | --- | --- | --- |
-| [**`axonos-standard`**](https://github.com/AxonOS-org/axonos-standard) | Canonical technical standard and architecture manual | **Canonical** |
+| [**`axonos-standard`**](https://github.com/AxonOS-org/axonos-standard) | Canonical technical standard and architecture manual | Canonical · v1.0.0 |
 | [**`axonos-rfcs`**](https://github.com/AxonOS-org/axonos-rfcs) | Engineering RFCs and design records | Normative when finalised |
-| [**`axonos-kernel`**](https://github.com/AxonOS-org/axonos-kernel) | Real-time `#![no_std]` kernel substrate | Research-grade |
-| [**`axonos-sdk`**](https://github.com/AxonOS-org/axonos-sdk) | Application-facing SDK and typed-intent boundary | Active |
-| [**`axonos-consent`**](https://github.com/AxonOS-org/axonos-consent) | Consent finite-state machine and neural-permission reference crate | Pre-clinical reference |
-| [**`axon-bci-gateway`**](https://github.com/AxonOS-org/axon-bci-gateway) | Acquisition-boundary / OpenBCI hardware-in-the-loop gateway | Non-safety acquisition boundary |
-| [**`axonos-swarm`**](https://github.com/AxonOS-org/axonos-swarm) | Distributed timing and coordination research | Experimental |
+| [**`axonos-kernel`**](https://github.com/AxonOS-org/axonos-kernel) | Real-time `#![no_std]` kernel substrate | Research-grade · v0.2.3 |
+| [**`axonos-sdk`**](https://github.com/AxonOS-org/axonos-sdk) | Application-facing SDK and typed-intent boundary | Active · v0.3.5 |
+| [**`axonos-consent`**](https://github.com/AxonOS-org/axonos-consent) | Consent finite-state machine and neural-permission reference crate | Pre-clinical reference · v0.4.0 |
+| [**`axonos-swarm`**](https://github.com/AxonOS-org/axonos-swarm) | Distributed timing and coordination research | Experimental · v0.2.1 |
+| [**`axon-bci-gateway`**](https://github.com/AxonOS-org/axon-bci-gateway) | Acquisition-boundary / OpenBCI hardware-in-the-loop gateway | Non-safety acquisition fork |
 
 Inside the canonical standard, four documents carry most of the weight:
 [`STANDARD.md`](https://github.com/AxonOS-org/axonos-standard/blob/main/STANDARD.md) ·
@@ -285,8 +285,11 @@ General — connect@axonos.org &nbsp;·&nbsp; Security — security@axonos.org
 <br>
 
 <sub>Released under the [MIT License](LICENSE). Repositories in the stack state their own licences —
-the canonical Standard is released under CC-BY-SA-4.0.<br>
-© 2026 The AxonOS Project · Singapore</sub>
+the canonical Standard is released under CC-BY-SA-4.0.</sub>
+
+<sub>Singapore · Zurich · Berlin · Milano · San Mateo</sub>
+
+<sub>© 2026 The AxonOS Project</sub>
 
 <br>
 
