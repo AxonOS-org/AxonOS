@@ -287,8 +287,6 @@ General — connect@axonos.org &nbsp;·&nbsp; Security — security@axonos.org
 <sub>Released under the [MIT License](LICENSE). Repositories in the stack state their own licences —
 the canonical Standard is released under CC-BY-SA-4.0.</sub>
 
-<sub>Singapore · Zurich · Berlin · Milano · San Mateo</sub>
-
 <sub>© 2026 The AxonOS Project</sub>
 
 <br>
