@@ -8,7 +8,7 @@
 
 <br>
 
-[![Standard](https://img.shields.io/badge/Standard-v1.0.0-0a4a8f?style=flat-square)](https://github.com/AxonOS-org/axonos-standard)
+[![Standard](https://img.shields.io/github/v/tag/AxonOS-org/axonos-standard?sort=semver&style=flat-square&label=Standard&color=0a4a8f)](https://github.com/AxonOS-org/axonos-standard)
 [![License](https://img.shields.io/badge/License-MIT-475569?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Pre--clinical-475569?style=flat-square)](#what-axonos-does-not-claim)
 [![Language](https://img.shields.io/badge/Kernel-Rust%20no__std-CE422B?style=flat-square)](https://github.com/AxonOS-org/axonos-kernel)
@@ -90,16 +90,16 @@ implementation.
 
 | | |
 | --- | --- |
-| **Kernel language** | Rust, `#![no_std]`, `#![forbid(unsafe_code)]` |
-| **Formal verification** | 28 [Kani](https://github.com/model-checking/kani) harnesses — bounded model checking |
-| **Unsafe code** | 0 — forbidden crate-wide |
+| **Kernel language** | Rust, `#![no_std]`; `#![forbid(unsafe_code)]` in every kernel crate but `axonos-spsc` |
+| **Formal verification** | 49 [Kani](https://github.com/model-checking/kani) harnesses — kernel 30, consent 10, signal pipeline 9 — proving properties of code over stated bounds |
+| **Unsafe code** | Confined to the SPSC ring in `axonos-spsc`: three documented operations |
 | **Real-time target** | ARM Cortex-M4F / M33 |
-| **Worst-case response** | ≤ 1000 µs, proven (L1); 972 µs measured (L2) |
-| **Public repositories** | 7 — every layer of the stack, no private repositories |
-| **Engineering RFCs** | 8, in [`axonos-rfcs`](https://github.com/AxonOS-org/axonos-rfcs) |
-| **Canonical standard** | [`axonos-standard`](https://github.com/AxonOS-org/axonos-standard) v1.0.0 |
-| **Clinical engagement** | 1 MOU — ALS rehabilitation centre, north-eastern US |
-| **Evidence held** | L1 (formally proven) + L2 (measured) — no L3 claimed |
+| **Worst-case response** | Not claimed — ≤ 1000 µs is the Standard's requirement; no proof of a time and no reference-hardware trace exist yet |
+| **Public repositories** | 23 in [AxonOS-org](https://github.com/AxonOS-org) — every layer of the stack |
+| **Engineering RFCs** | 11, in [`axonos-rfcs`](https://github.com/AxonOS-org/axonos-rfcs) |
+| **Canonical standard** | [`axonos-standard`](https://github.com/AxonOS-org/axonos-standard) v1.1.1 |
+| **Clinical engagement** | An opened conversation with an ALS rehabilitation centre, north-eastern US — no memorandum signed ([roadmap](https://axonos.org/roadmap.html)) |
+| **Evidence held** | L1 (properties proven by Kani) — no L2 and no L3 claimed |
 
 <sub>Each figure above is traceable to a repository in the stack. See [Evidence discipline](#evidence-discipline).</sub>
 
@@ -155,16 +155,17 @@ specified in [`STANDARD.md`](https://github.com/AxonOS-org/axonos-standard/blob/
 
 ## The AxonOS stack
 
-Every repository below is public. There are no private repositories.
+Every repository is public. The table lists the core of the stack; the full
+set of 23 is on the [organisation page](https://github.com/AxonOS-org).
 
 | Repository | Role | Status |
 | --- | --- | --- |
-| [**`axonos-standard`**](https://github.com/AxonOS-org/axonos-standard) | Canonical technical standard and architecture manual | Canonical · v1.0.0 |
+| [**`axonos-standard`**](https://github.com/AxonOS-org/axonos-standard) | Canonical technical standard and architecture manual | Canonical · v1.1.1 |
 | [**`axonos-rfcs`**](https://github.com/AxonOS-org/axonos-rfcs) | Engineering RFCs and design records | Normative when finalised |
-| [**`axonos-kernel`**](https://github.com/AxonOS-org/axonos-kernel) | Real-time `#![no_std]` kernel substrate | Research-grade · v0.2.3 |
+| [**`axonos-kernel`**](https://github.com/AxonOS-org/axonos-kernel) | Real-time `#![no_std]` kernel substrate | Research-grade · v0.4.3 |
 | [**`axonos-sdk`**](https://github.com/AxonOS-org/axonos-sdk) | Application-facing SDK and typed-intent boundary | Active · v0.3.5 |
-| [**`axonos-consent`**](https://github.com/AxonOS-org/axonos-consent) | Consent finite-state machine and neural-permission reference crate | Pre-clinical reference · v0.4.0 |
-| [**`axonos-swarm`**](https://github.com/AxonOS-org/axonos-swarm) | Distributed timing and coordination research | Experimental · v0.2.1 |
+| [**`axonos-consent`**](https://github.com/AxonOS-org/axonos-consent) | Consent finite-state machine and neural-permission reference crate | Pre-clinical reference · v0.9.2 |
+| [**`axonos-swarm`**](https://github.com/AxonOS-org/axonos-swarm) | Distributed timing and coordination research | Experimental · v0.2.2 |
 | [**`axon-bci-gateway`**](https://github.com/AxonOS-org/axon-bci-gateway) | Acquisition-boundary / OpenBCI hardware-in-the-loop gateway | Non-safety acquisition fork |
 
 Inside the canonical standard, four documents carry most of the weight:
@@ -188,8 +189,11 @@ and summarised here.
 | **L2** | **Measured** — a measurement taken on the reference hardware under a stated protocol. |
 | **L3** | **Independently validated** — reproduced by a party independent of the project. |
 
-The public repositories currently hold **L1 and L2** evidence. AxonOS
-does **not** currently claim any **L3** result. A claim's level travels
+The public repositories currently hold **L1** evidence only: properties of
+code proven by Kani over stated bounds. No **L2** measurement is claimed,
+because no reference-hardware trace has been published, and no **L3** result
+is claimed. The authoritative list is
+[`CLAIMS.md`](https://github.com/AxonOS-org/axonos-standard/blob/main/CLAIMS.md). A claim's level travels
 with the claim — an L2 measurement is never presented as an L1 proof.
 
 ---
